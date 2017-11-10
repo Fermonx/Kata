@@ -1,0 +1,15 @@
+#Escribe un programa que imprima los números del 1 al 100, pero aplicando las siguientes normas:
+#Devuelve Fizz si el número es divisible por 3.
+#Devuelve Buzz si el número es divisible por 5.
+#Devuelve FizzBuzz si el número es divisible por 3 y por 5.
+
+for num in range (1, 101):           
+  if((num%3==0)and(num%5==0)): print("FizzBuzz") 
+  elif(num%5 == 0): print("Buzz")
+  elif(num%3 == 0): print("Fizz")
+  else: print(num)
+  
+#Line 6: For con el rango, va hasta el 101 para poder tomar el 100
+#Line 7: Toma las condiciones de FizzBuzz para que las compare primero en el if, de no ser así imprimiría Fizz o Buzz así el número sea divisible entre ambos porque de estar en un elif nunca llegaría a verificar ambas condiciones e imprimir FizzBuzz
+#Line 8 y 9: else if para verificar su divisibilidad utilizando mod (%)
+#Line 10: Si no se cumplen ninguna de las condiciones anteriores imprime el número actual
