@@ -13,3 +13,15 @@ for num in range (1, 101):
 #Line 7: Toma las condiciones de FizzBuzz para que las compare primero en el if, de no ser así imprimiría Fizz o Buzz así el número sea divisible entre ambos porque de estar en un elif nunca llegaría a verificar ambas condiciones e imprimir FizzBuzz
 #Line 8 y 9: else if para verificar su divisibilidad utilizando mod (%)
 #Line 10: Si no se cumplen ninguna de las condiciones anteriores imprime el número actual
+
+
+Código con la Fase 2 Implementada:
+
+for num in range (1, 101):           
+  if((num%3==0)and(num%5==0)): print("FizzBuzz") 
+  elif(num%5 == 0): print("Buzz")
+  elif(num%3 == 0): print("Fizz")
+  elif(num%10 == 3): print("Fizz")
+  elif(num%10 == 5): print("Buzz")
+  else: print(num)
+  
